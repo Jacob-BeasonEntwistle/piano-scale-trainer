@@ -1,0 +1,5 @@
+Randomisation - https://www.w3schools.com/js/js_random.asp
+innerText/innerHTML/textContext - https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_node_textcontent_innerhtml_innertext
+JavaScript Objects - https://www.w3schools.com/js/js_objects.asp
+Speech Synthesis - https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis/speak
+Flexbox container - https://www.w3schools.com/css/css3_flexbox_container.asp

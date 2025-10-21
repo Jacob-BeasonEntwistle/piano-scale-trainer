@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.top-bar {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2%;
+    background-color: #3b3b3b;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Main container: center scale display and button */
+.column {
+    min-height: 75vh;
+    flex: 1;
+    /* take remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* vertical centering */
+    align-items: center;
+    /* horizontal centering */
+    padding: 1rem;
+    background-color: #edf2f7;
+    /* light background */
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+/* Scale display */
+#scale-display {
+    font-size: 2rem;
+    /* make it big and prominent */
+    font-weight: bold;
+    line-height: 10vh;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    /* space between scale and button */
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Button */
+button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 10px;
+    border: none;
+    background-color: #161616;
+    /* blue */
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #adadad;
+}
+
+.footer {
+    min-height: 10vh;
+    background: repeating-linear-gradient(90deg,
+        white 0px, white 40px,
+        /* white key */
+        black 40px, black 60px,
+        /* black key */
+        white 60px, white 100px,
+        /* white key */
+        black 100px, black 120px,
+        /* black key */
+        white 120px, white 150px,
+        /* white key */
+        white 150px, white 160px,
+        /* black gap (no black key) */
+        white 160px, white 200px,
+        /* white key */
+        black 200px, black 220px,
+        /* black key */
+        white 220px, white 260px,
+        /* white key */
+        black 260px, black 280px,
+        /* black key */
+        white 280px, white 320px,
+        /* white key */
+        black 320px, black 340px,
+        /* black key */
+        white 340px, white 380px,
+        /* white key */
+        white 380px, white 390px
+        /* black gap again */
+        );
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    #scale-display {
+        font-size: 1.5rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .top-bar {
+        font-size: 0.9rem;
+        padding: 0.5rem 2%;
+    }
+}

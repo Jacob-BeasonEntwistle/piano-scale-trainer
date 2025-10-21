@@ -27,10 +27,10 @@ const minorScales = {
 const majorScalesThirdApart = {
     name: "major_scales_third_apart",
     scales: [
-        {display: "Db major third apart", speak: "Play a D flat major third apart"}, 
-        {display: "E major third apart", speak: "Play an E major third apart"}, 
-        {display: "G major third apart", speak: "Play a G major third apart"}, 
-        {display: "Bb major third apart", speak: "Play a B flat major third apart"}
+        {display: "Db major third apart", speak: "Play a D flat major scale, a third apart"}, 
+        {display: "E major third apart", speak: "Play an E major scale, a third apart"}, 
+        {display: "G major third apart", speak: "Play a G major scale, a third apart"}, 
+        {display: "Bb major third apart", speak: "Play a B flat major scale, a third apart"}
     ],
     allowsStaccato: true
 }
@@ -38,10 +38,10 @@ const majorScalesThirdApart = {
 const minorScalesThirdApart = {
     name: "minor_scales_third_apart",
     scales: [
-        {display: "C# minor harmonic third apart", speak: "Play a C sharp minor harmonic third apart"}, 
-        {display: "E minor harmonic third apart", speak: "Play an E minor harmonic third apart"}, 
-        {display: "G minor harmonic third apart", speak: "Play a G minor harmonic third apart"}, 
-        {display: "Bb minor harmonic third apart", speak: "Play a B flat minor harmonic third apart"}
+        {display: "C# minor harmonic third apart", speak: "Play a C sharp minor harmonic scale, a third apart"}, 
+        {display: "E minor harmonic third apart", speak: "Play an E minor harmonic scale, a third apart"}, 
+        {display: "G minor harmonic third apart", speak: "Play a G minor harmonic scale, a third apart"}, 
+        {display: "Bb minor harmonic third apart", speak: "Play a B flat minor harmonic scale, a third apart"}
     ],
     allowsStaccato: true
 }
@@ -49,10 +49,10 @@ const minorScalesThirdApart = {
 const majorContraryMotion = {
     name: "major_contrary_motion",
     scales: [
-        {display: "Db major contrary motion", speak: "Play a D flat major contrary motion"}, 
-        {display: "E major contrary motion", speak: "Play an E major contrary motion"}, 
-        {display: "G major contrary motion", speak: "Play a G major contrary motion"}, 
-        {display: "Bb major contrary motion", speak: "Play a B flat major contrary motion"}
+        {display: "Db major contrary-motion", speak: "Play a D flat major contrary-motion scale"}, 
+        {display: "E major contrary-motion", speak: "Play an E major contrary-motion scale"}, 
+        {display: "G major contrary-motion", speak: "Play a G major contrary-motion scale"}, 
+        {display: "Bb major contrary-motion", speak: "Play a B flat major contrary-motion scale"}
     ],
     allowsStaccato: true
 }
@@ -60,10 +60,10 @@ const majorContraryMotion = {
 const minorContraryMotion = {
     name: "minor_contrary_motion",
     scales: [
-        {display: "C# minor harmonic contrary motion", speak: "Play a C sharp minor harmonic contrary motion"}, 
-        {display: "E minor harmonic contrary motion", speak: "Play an E minor harmonic contrary motion"}, 
-        {display: "G minor harmonic contrary motion", speak: "Play a G minor harmonic contrary motion"}, 
-        {display: "Bb minor harmonic contrary motion", speak: "Play a B flat minor harmonic contrary motion"}
+        {display: "C# minor harmonic contrary-motion", speak: "Play a C sharp minor harmonic contrary-motion scale"}, 
+        {display: "E minor harmonic contrary-motion", speak: "Play an E minor harmonic contrary-motion scale"}, 
+        {display: "G minor harmonic contrary-motion", speak: "Play a G minor harmonic contrary-motion scale"}, 
+        {display: "Bb minor harmonic contrary-motion", speak: "Play a B flat minor harmonic contrary-motion scale"}
     ],
     allowsStaccato: true
 }
@@ -80,7 +80,7 @@ const scalesInThirds = {
 const chromaticContraryMotion = {
     name: "chromatic_contrary_motion",
     scales: [
-        {display: "contrary motion starting in C# (LH) E (RH)", speak: "Play a contrary motion scale starting on C sharp in the left hand and E in the right hand"}
+        {display: "Contrary-motion starting in C# (LH) E (RH)", speak: "Play a contrary-motion scale starting on C sharp in the left hand and E in the right hand"}
     ],
     allowsStaccato: true
 }
@@ -88,10 +88,10 @@ const chromaticContraryMotion = {
 const majorArpeggiosFirstInversion = {
     name: "major_arpeggios_first_inversion",
     scales: [
-        {display: "Db major arpeggio (1st inversion)", speak: "Play a D flat major arpeggio first inversion"}, 
-        {display: "E major arpeggio (1st inversion)", speak: "Play an E major arpeggio first inversion"}, 
-        {display: "G major arpeggio (1st inversion)", speak: "Play a G major arpeggio first inversion"}, 
-        {display: "Bb major arpeggio (1st inversion)", speak: "Play a B flat major arpeggio first inversion"}
+        {display: "Db major arpeggio (1st inversion)", speak: "Play a D flat major arpeggio, first inversion"}, 
+        {display: "E major arpeggio (1st inversion)", speak: "Play an E major arpeggio, first inversion"}, 
+        {display: "G major arpeggio (1st inversion)", speak: "Play a G major arpeggio, first inversion"}, 
+        {display: "Bb major arpeggio (1st inversion)", speak: "Play a B flat major arpeggio, first inversion"}
     ],
     allowsStaccato: false
 }
@@ -99,10 +99,10 @@ const majorArpeggiosFirstInversion = {
 const minorArpeggiosFirstInversion = {
     name: "minor_arpeggios_first_inversion",
     scales: [
-        {display: "C# minor arpeggio (1st inversion)", speak: "Play a C sharp minor arpeggio first inversion"}, 
-        {display: "E minor arpeggio (1st inversion)", speak: "Play an E minor arpeggio first inversion"}, 
-        {display: "G minor arpeggio (1st inversion)", speak: "Play a G minor arpeggio first inversion"}, 
-        {display: "Bb minor arpeggio (1st inversion)", speak: "Play a B flat minor arpeggio first inversion"}
+        {display: "C# minor arpeggio (1st inversion)", speak: "Play a C sharp minor arpeggio, first inversion"}, 
+        {display: "E minor arpeggio (1st inversion)", speak: "Play an E minor arpeggio, first inversion"}, 
+        {display: "G minor arpeggio (1st inversion)", speak: "Play a G minor arpeggio, first inversion"}, 
+        {display: "Bb minor arpeggio (1st inversion)", speak: "Play a B flat minor arpeggio, first inversion"}
     ],
     allowsStaccato: false
 }

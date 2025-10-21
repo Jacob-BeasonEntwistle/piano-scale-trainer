@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piano Scale Trainer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources/css/style.css">
 </head>
 
 <body>
-    <h1>Piano Scale Trainer</h1>
-    <!--Structure + button + display area-->
-    <div id="scale-display">Press the button to get a scale!</div>
-    <button id="next-scale">Next Scale</button>
+    <div class="top-bar">
+        <h1>Piano Scale Trainer</h1>
+        <div id="progress-display">Scales Practiced: 0</div>
+    </div>
 
-    <script src="grade7.js" defer></script>
-    <script src="script.js" defer></script>
+    <div class="column">
+        <div id="scale-display">Press the button to get a scale!</div>
+        <div class="row">
+            <button id="next-scale">Next Scale</button>
+            <button id="repeat-scale">Repeat Scale</button>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+    <script src="resources/js/grade7.js" defer></script>
+    <script src="resources/js/script.js" defer></script>
 </body>
 
 </html>
