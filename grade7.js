@@ -46,6 +46,6 @@ const diminished_sevenths = [
     "starting on Bb", "starting on E"
 ]
 
-const grade7 = [
+window.grade7 = [
     major_scales, minor_scales, major_scales_third_apart, minor_scales_third_apart, major_contrary_motion, minor_contrary_motion, scales_in_thirds, chromatic_contrary_motion, major_arpeggios_first_inversion, minor_arpeggios_first_inversion, dominant_sevenths, diminished_sevenths
 ]

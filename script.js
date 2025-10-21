@@ -1,36 +1,43 @@
 // Logic for random selection + speech
 
-// --Needs to handle--
+const nextScaleButton = document.getElementById("next-scale");
+nextScaleButton.addEventListener("click", chooseRandom);
 
 const articulation = [ "legato", "staccato" ]
 
-// [A. Variables and data]
-// - A List (array) holding all scales
-// - A variable to store whichever scale is currently selected
+let category = "";
 let currentlySelected = "";
-// - (Optional) A counter of how many you've done or the last one played
+let currentArticulation = "";
+
 let counter = 0;
 let lastPlayed = "";
 
-// [B. Functions]
-// - A function that picks a random one from the list
 function chooseRandom(){
-    // --Random Selection--
-    // 1. Get total number of scales
-    // 2. Pick a random index within the range
-    // 3. Use that index to grab the corresponding scale from the list
-    // 4. Update your "scale display" element's text to show it
-    // 5. Use text-to-speech to read it out
-}
-// - A function that displays that scale on the page
-function displayScale(){
+    // Pick a random category from the grade
+    category = grade7[Math.floor(Math.random() * grade7.length)];
+    console.log(category);
+    // Pick a random scale from the category
+    currentlySelected = category[Math.floor(Math.random() * category.length)];
+    console.log(currentlySelected);
 
+    currentArticulation = articulation[Math.floor(Math.random() * articulation.length)];
+    console.log(currentArticulation);
+
+    displayScale();     // Display the selected scale
+    sayScale();         // Say the scale outloud
 }
-// - A function that speaks the text aloud (using speechSynthesis)
+
+// Updating the "scale display" element's text to show the scale
+function displayScale(){
+    if (category == major_scales || category == minor_scales || category == major_scales_third_apart || category == minor_scales_third_apart || category == scales_in_thirds || category == chromatic_contrary_motion){
+        document.getElementById("scale-display").innerText = currentlySelected + currentArticulation;
+    }
+    else{
+        document.getElementById("scale-display").innerText = currentlySelected + articulation[1];
+    }
+}
+
+// Speaking the scale aloud (using speechSynthesis)
 function sayScale(){
 
 }
-
-// [C. Event handling]
-// - You need an event listener attached to the "next scale" button
-// -- That event triggers your logic each time you click
